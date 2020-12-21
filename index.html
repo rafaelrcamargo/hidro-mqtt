@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Links & Scripts -->
+
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+
+    <script
+      src="https://kit.fontawesome.com/8d2d8a4828.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="shortcut icon" href="./img/icon.svg" type="image/x-svg" />
+
+    <link rel="stylesheet" href="./style/reset.css" />
+    <link rel="stylesheet" href="./style/style.css" />
+
+    <!-- Title -->
+
+    <title>Hidroponia MQTT</title>
+  </head>
+  <body>
+    <div class="title">
+      <h1><i class="fas fa-seedling"></i> Hidroponia</h1>
+    </div>
+
+    <div class="container">
+      <div class="chart">
+        <p class="chartTitle">Temperatura da água</p>
+        <div id="chartdivTempGau"></div>
+        <div id="chartdivTempData"></div>
+      </div>
+
+      <div class="chart">
+        <p class="chartTitle">Temperatura do Ambiente</p>
+        <div id="chartdivAmbTempGau"></div>
+      </div>
+
+      <div class="chart">
+        <p class="chartTitle">Umidade do Ambiente</p>
+        <div id="chartdivUmGau"></div>
+      </div>
+
+      <div class="chart">
+        <p class="chartTitle">Vazão e Quantidade de água</p>
+        <div id="chartdivVaz"></div>
+        <div id="chartdivLitro"></div>
+      </div>
+
+      <div class="chart">
+        <div class="statusNivel">
+          <h2>Status Nivel:</h2>
+          <p class="pNivel"></p>
+        </div>
+      </div>
+      <div class="chart">
+        <div class="statusBomba">
+          <h2>Status Bomba:</h2>
+          <p class="pBomba"></p>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.amcharts.com/lib/4/core.js"></script>
+    <script src="https://cdn.amcharts.com/lib/4/charts.js"></script>
+    <script src="https://www.amcharts.com/lib/4/plugins/venn.js"></script>
+    <script src="https://cdn.amcharts.com/lib/4/themes/animated.js"></script>
+    <script src="./js/amcharts.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/paho-mqtt/1.0.1/mqttws31.min.js"></script>
+    <script src="./js/index.js"></script>
+    <script src="./js/watTemp&Data.js"></script>
+    <script src="./js/ambTemp&Hum.js"></script>
+    <script src="./js/vaz&lit.js"></script>
+    <script src="./js/statusNv&Bmb.js"></script>
+  </body>
+</html>

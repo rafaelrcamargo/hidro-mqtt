@@ -1,0 +1,268 @@
+/*Reset padrão para navegadores*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;    
+    padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* definir o focus para acessibilidade */
+
+:focus {
+    outline: 0;
+}
+
+/* Regras para o HTML5 resetar os browsers antigos */
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+blockquote, q {
+	quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+input[type=search]::-webkit-search-cancel-button,
+input[type=search]::-webkit-search-decoration,
+input[type=search]::-webkit-search-results-button,
+input[type=search]::-webkit-search-results-decoration {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+input[type=search] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+}
+
+textarea {
+    overflow: auto;
+    vertical-align: top;
+    resize: vertical;
+}
+
+/* Ajustando o `inline-block` não definido no IE 6/7/8/9 e no Firefox 3. */
+
+audio,
+canvas,
+video {
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    max-width: 100%;
+}
+
+/* Prevenindo browsers modernos de mostrar `audio` sem os controles.
+   Remover exesso de `height` no iOS 5.*/
+
+audio:not([controls]) {
+    display: none;
+    height: 0;
+}
+
+[hidden] {
+    display: none;
+}
+
+html {
+    font-size: 100%; /* 1 */
+    -webkit-text-size-adjust: 100%; /* 2 */
+    -ms-text-size-adjust: 100%; /* 2 */
+}
+
+a:focus {
+    outline: thin dotted;
+}
+
+a:active,
+a:hover {
+    outline: 0;
+}
+
+/**
+ * 1. Remove border when inside `a` element in IE 6/7/8/9 and Firefox 3.
+ * 2. Improve image quality when scaled in IE 7.
+*/
+
+img {
+    border: 0; /* 1 */
+    -ms-interpolation-mode: bicubic; /* 2 */
+}
+
+/**
+ * Address margin not present in IE 6/7/8/9, Safari 5, and Opera 11.
+*/
+
+figure {
+    margin: 0;
+}
+
+/**
+ * Correct margin displayed oddly in IE 6/7.
+*/
+
+form {
+    margin: 0;
+}
+
+fieldset {
+    border: 1px solid #cdcdcd;
+    margin: 0 2px;
+    padding: 0.35em 0.625em 0.75em;
+}
+
+legend {
+    border: 0; /* 1 */
+    padding: 0;
+    white-space: normal; /* 2 */
+    *margin-left: -7px; /* 3 */
+}
+
+button,
+input,
+select,
+textarea {
+    font-size: 100%; /* 1 */
+    margin: 0; /* 2 */
+    vertical-align: baseline; /* 3 */
+    *vertical-align: middle; /* 3 */
+}
+
+button,
+input {
+    line-height: normal;
+}
+
+button,
+select {
+    text-transform: none;
+}
+
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+    -webkit-appearance: button;
+    cursor: pointer;
+    *overflow: visible;
+}
+
+button[disabled],
+html input[disabled] {
+    cursor: default;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+    box-sizing: border-box;
+    padding: 0;
+    *height: 13px;
+    *width: 13px;
+}
+
+input[type="search"] {
+    -webkit-appearance: textfield;
+    -moz-box-sizing: content-box;
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+}
+
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none;
+}
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+}
+
+textarea {
+    overflow: auto; /* 1 */
+    vertical-align: top; /* 2 */
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+html,
+button,
+input,
+select,
+textarea {
+    color: #202020;
+}
+
+
+::-moz-selection {
+    background: #b3dffc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3dffc;
+    text-shadow: none;
+}
+
+img {
+    vertical-align: middle;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.chromeframe {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #202020;
+    padding: 0.2em 0;
+}
+
