@@ -5,7 +5,10 @@ let mqtt,
   actUmMsg,
   actNivMsg,
   actVazMsg,
-  actLitMsg;
+  actLitMsg,
+  watTime1,
+  watTime2,
+  watTime3;
 let reconnectTimeout = 2000;
 let host = "broker.hivemq.com";
 let port = 8000;
@@ -85,4 +88,24 @@ window.onload = MQTTConnect();
 //Dark Mode
 
 let textColor = "#262626";
-  
+
+let buttonsWatTime = document.querySelectorAll(".watTime button");
+
+buttonsWatTime[0].addEventListener("click", () => {
+  watTime1 = new Paho.MQTT.Message("2");
+  watTime1.destinationName = "hidroponia/node/watTime";
+  watTime1.qos = 1;
+  mqtt.send(watTime1);
+});
+buttonsWatTime[1].addEventListener("click", () => {
+  watTime2 = new Paho.MQTT.Message("3");
+  watTime2.destinationName = "hidroponia/node/watTime";
+  watTime2.qos = 1;
+  mqtt.send(watTime2);
+});
+buttonsWatTime[2].addEventListener("click", () => {
+  watTime3 = new Paho.MQTT.Message("4");
+  watTime3.destinationName = "hidroponia/node/watTime";
+  watTime3.qos = 1;
+  mqtt.send(watTime3);
+});

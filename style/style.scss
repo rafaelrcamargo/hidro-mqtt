@@ -24,6 +24,22 @@ body {
   grid-gap: 2em;
   grid-template-columns: repeat(auto-fit, minmax(700px, 1fr));
 
+  .watTime {
+    width: 100vw;
+    margin: auto;
+    text-align: center;
+    button {
+      margin: 0 2em;
+      font-family: "Montserrat", sans-serif;
+      font-size: 1.5em;
+      padding: 1em;
+      font-weight: 600;
+      letter-spacing: 5px;
+      border: none;
+      box-shadow: 10px 10px 30px rgba(26, 26, 26, 0.2);
+    }
+  }
+
   .chart {
     padding: 2em;
     border-radius: 0.2em;
