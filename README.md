@@ -1,7 +1,7 @@
+## - - - - - - - - - pt-br - - - - - - - - -
 # hidroMqtt
 
-### pt-br
-### desc in english right below this one in portuguese
+desc in english right below this one in portuguese
 
 Projeto de uma produção hidroponica controlada remotamente por wifi, via ESP-8266 e Mqtt
 
@@ -14,11 +14,9 @@ Projeto de uma produção hidroponica controlada remotamente por wifi, via ESP-8
 
 * **Rafael R. Camargo** - *Desenvolvimento de software* - [RafaelRCamargo](https://github.com/RafaelRCamargo)
 
-# - - - - - - - - - - - - - - -
+## - - - - - - - - - en - - - - - - - - -
 
 # hidroMqtt
-
-### en
 
 Project for a hydroponic farm controlled remotely by wi-fi, via ESP-8266 and Mqtt
 
