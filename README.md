@@ -13,6 +13,8 @@ Projeto de uma produção hidroponica controlada remotamente por wifi, via ESP-8
 
 * **Rafael R. Camargo** - *Desenvolvimento de software* - [RafaelRCamargo](https://github.com/RafaelRCamargo)
 
+<br>
+
 *- - - - - - - - - en - - - - - - - - -*
 
 # hidroMqtt
